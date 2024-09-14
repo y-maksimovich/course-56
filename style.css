@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: honeydew;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1000px;
+}
+
+#myPhoto {
+    width: 300px;
+}
+
+.fio {
+    color: blue;
+}
+
+
+.skillsList li{
+    color: green;
+    font-size: 24px;
+    transition: 200ms;
+}
+
+.skillsList li:nth-child(3n+1) {
+    color: purple;
+}
+
+.skillsList li:first-child {
+    color: red;
+}
+
+.skillsList li:last-child {
+    color: blue;
+}
+
+.skillsList li:hover {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.skillsList li::after {
+    content: ";";
+}
+
+.skillsList li:last-child:after {
+    content: ".";
+}
+
+.skillsList li::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url('./done.png');
+    background-size: contain;
+}
+
+.skillsList {
+    list-style-type: none;
+}
+
+label {
+    display: block;
+}
